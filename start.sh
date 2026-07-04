@@ -17,4 +17,5 @@ for _ in range(30):
 echo "Backend is ready!"
 
 # Start Streamlit frontend in the foreground on the port assigned by Railway
-python -m streamlit run frontend/streamlit_app.py --server.port ${PORT:-8501} --server.address 0.0.0.0
+python -m streamlit run frontend/streamlit_app.py --server.port ${PORT:-8501} --server.address 0.0.0.0 --server.headless true
+
