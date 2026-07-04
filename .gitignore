@@ -1,0 +1,27 @@
+# Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+env/
+ENV/
+
+# Database files
+text2sql.db
+*.db
+*.db-journal
+chroma_db/
+uploaded_dbs/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# IDEs and Editors
+.vscode/
+.idea/
+.wake/
