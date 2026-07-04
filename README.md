@@ -2,6 +2,17 @@
 
 Natural language to SQL analytics platform with safe execution, schema understanding, and a Streamlit UI.
 
+## Previews
+
+### 1. Ask Your Database (Natural Language Queries)
+![Natural Language Query UI](docs/images/query_page.png)
+
+### 2. Database Explorer (Raw SQL Editor)
+![Database Explorer UI](docs/images/database_explorer.png)
+
+### 3. Query History & Performance Metrics
+![Query History UI](docs/images/query_history.png)
+
 ## Quick Start
 
 ```bash
