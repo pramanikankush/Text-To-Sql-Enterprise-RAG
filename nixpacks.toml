@@ -1,0 +1,3 @@
+# Nixpacks configuration to specify start command
+[start]
+cmd = "bash start.sh"
