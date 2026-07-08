@@ -27,6 +27,16 @@ def on_startup():
     logging.info("Database initialized.")
 
 
+@app.get("/")
+def read_root():
+    return {
+        "message": "Welcome to the Text-to-SQL API!",
+        "health": "/health",
+        "docs": "/docs"
+    }
+
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
