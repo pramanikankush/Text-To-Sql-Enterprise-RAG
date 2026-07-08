@@ -1,0 +1,23 @@
+# Docker volumes — keeps DB + ChromaDB outside container
+# Keys never in this file — pass via .env at runtime
+
+services:
+  text2sql:
+    build: .
+    container_name: text2sql-enterprise
+    ports:
+      - "8000:8000"   # FastAPI backend
+      - "8501:8501"   # Streamlit frontend
+    env_file:
+      - .env          # Local .env — never committed to git
+    environment:
+      # Override paths to use Docker volume (local .env keeps ./text2sql.db for dev)
+      DATABASE_URL: sqlite:////data/text2sql.db
+      CHROMA_PERSIST_DIR: /data/chroma_db
+    volumes:
+      - text2sql_data:/data   # Persistent SQLite + ChromaDB
+    restart: unless-stopped
+
+volumes:
+  text2sql_data:
+

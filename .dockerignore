@@ -1,0 +1,35 @@
+# Secrets — NEVER in image
+.env
+.env.*
+
+# Git
+.git
+.gitattributes
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+
+# Local data (persisted via Docker volume, not baked in)
+chroma_db/
+uploaded_dbs/
+*.db
+*.db-journal
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+.wake/
+
+# Docs / misc
+docs/
+tests/
