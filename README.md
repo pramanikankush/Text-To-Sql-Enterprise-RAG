@@ -1,6 +1,9 @@
 # Text-to-SQL Enterprise
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://text-to-sql-enterprise-rag-u44ae2is6ppvwu77kxn5qh.streamlit.app)
+
 Natural language to SQL analytics platform with safe execution, schema understanding, and a Streamlit UI.
+
 
 ## Previews
 
